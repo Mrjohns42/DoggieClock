@@ -6,7 +6,7 @@ In the style of a "Days since last accident..." factory safety sign, DoggieClock
 
 Or you can modify the code and track the passage of time for any event you desire.
 
-My motivation for this project was mainly to experiment with tri-color EINK displays and an ESP32.  EINK displays are perfect for this type of project because they only draw power when updating the screen, and paired with ESP32 low-power modes, the project should be able to run for a quite a bit on just a LiPo battery.
+My motivation for this project was mainly to experiment with tri-color ePaper displays (EPDs) and an ESP32.  ePaper/eInk displays are perfect for this type of project because they only draw power when updating the screen, and paired with ESP32 low-power modes, the project should be able to run for a quite a bit on just a LiPo battery.
 
 ...And my other motivation was of course, Leroy, this little gremlin right here:
 
@@ -24,11 +24,11 @@ This project uses stacking headers, so get that variation from Adafruit or buy t
 The Feather Board form factor breaks everything out for easy debugging and prototyping, and is compatible with a range of pre-existing FeatherWing boards, such as...
 
 ### [Adafruit 2.13" Tri-Color eInk / ePaper Display FeatherWing - Red Black White](https://www.adafruit.com/product/4128)
-This is a tri-color EINK display (red/white/black).  I didn't even know that was a thing before this project, but I knew I had to try one.
+This is a tri-color eInk display (red/white/black).  I didn't even know that was a thing before this project, but I knew I had to try one.
 
 Adafruit makes it too easy with added SRAM, a microSD socket, and integrated support with their GFX libraries.  I've spent a lot of time on past projects managing font glyphs and image bitmaps, but not with this board.
 
-They also offer a traditional monochrome EINK version of this board, and this project code should support it as well.  Look for the `EPD_MONOCHROME` flag.
+They also offer a traditional monochrome eInk version of this board, and this project code should support it as well.  Look for the `EPD_MONOCHROME` flag.
 
 ### [Lithium Ion Polymer Battery - 3.7v 1200mAh](https://www.adafruit.com/product/258)
 You can go with more or less mAh as your needs require.  If you don't get it from Adafruit, check the polarity of your connector to make sure it's the same as the board, or you'll let out the magic smoke.  You can also forego the LiPo altogether and run the board off USB power alone.
@@ -44,8 +44,8 @@ To keep a neat/tidy package, I used the right-angle mount tactile momentary butt
 
 ![overkill](images/buttonboard.jpg)
 
-### [3D Printed EINK Display Stand/Housing](https://learn.adafruit.com/eink-featherwing-display-stand?embeds=allow)
-Adafruit pulls through once again with a nice little stand design that fits the EINK board perfectly.  They don't sell this one but the STL is free to download.  If you're into 3D printing like me, give printing one a shot.  Or send the STL to somewhere like Shapeways and have them print it for you.
+### [3D Printed Display Stand/Housing](https://learn.adafruit.com/eink-featherwing-display-stand?embeds=allow)
+Adafruit pulls through once again with a nice little stand design that fits the eInk board perfectly.  They don't sell this one but the STL is free to download.  If you're into 3D printing like me, give printing one a shot.  Or send the STL to somewhere like Shapeways and have them print it for you.
 
 Some [nylon screws and standoffs](https://www.adafruit.com/product/3299) pull it all together and make the thing look damn-near professional.
 
