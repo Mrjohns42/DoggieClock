@@ -84,25 +84,25 @@ Please donate to and buy from open source projects.  Open source doesn't just en
 
 
 #### BUY
-[Adafruit](https://www.adafruit.com/)
+* [Adafruit](https://www.adafruit.com/)
 
-[Sparkfun](https://www.sparkfun.com/)
+* [Sparkfun](https://www.sparkfun.com/)
 
-[Espressif](https://www.espressif.com/)
+* [Espressif](https://www.espressif.com/)
 
 
 #### DONATE
-[Arduino](https://www.arduino.cc/en/Main/Donate)
+* [Arduino](https://www.arduino.cc/en/Main/Donate)
 
-[Mozilla Foundation](https://foundation.mozilla.org/en/)
+* [Mozilla Foundation](https://foundation.mozilla.org/en/)
 
-[Wikimedia Foundation](https://wikimediafoundation.org/support/)
+* [Wikimedia Foundation](https://wikimediafoundation.org/support/)
 
-[Open Source Hardware Association](https://www.oshwa.org/)
+* [Open Source Hardware Association](https://www.oshwa.org/)
 
-[Open Source Initiative](https://opensource.org/)
+* [Open Source Initiative](https://opensource.org/)
 
-[Software Freedom Conservancy](https://sfconservancy.org/)
+* [Software Freedom Conservancy](https://sfconservancy.org/)
 
 
 
