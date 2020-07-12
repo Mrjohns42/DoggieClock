@@ -125,7 +125,6 @@ int getStringLength(const char * str)
 // 2nd and additional times: use empty string
 // returns substring of wrapped text.
 // set text font prior to calling
-// TODO: rewrite using strtok
 char * wrapWord(const char * wrapString, int linesize)
 {
     static char buff[255];
@@ -312,6 +311,44 @@ void goToSleep(int sleepDuration, bool allowButtonWakeup = true)
 }
 
 /* ========== CONVERSION FUNCTIONS ========== */
+
+// Scales sleep duration as ellapsed time increases
+int calculateSleepDuration(time_t t1, time_t t2)
+{
+    int sleepDuration = DEFAULT_SLEEP_SEC;
+    time_t delta = (t1 > t2) ? (t1 - t2) : (t2 - t1);
+
+    if (delta >= SECS_PER_YEAR)
+    {
+        sleepDuration = DEFAULT_SLEEP_SEC * 60 * 24;
+    }
+    else if (delta >= (SECS_PER_DAY*30))
+    {
+        sleepDuration = DEFAULT_SLEEP_SEC * 60 * 12;
+    }
+    else if (delta >= SECS_PER_WEEK)
+    {
+        sleepDuration = DEFAULT_SLEEP_SEC * 60 * 4;
+    }
+    else if (delta >= SECS_PER_DAY)
+    {
+        sleepDuration = DEFAULT_SLEEP_SEC * 60;
+    }
+    else if (delta >= SECS_PER_HOUR)
+    {
+        sleepDuration = DEFAULT_SLEEP_SEC * 10;
+    }
+    else if (delta >= SECS_PER_MIN)
+    {
+        sleepDuration = DEFAULT_SLEEP_SEC;
+    }
+    else
+    {
+        sleepDuration = DEFAULT_SLEEP_SEC;
+    }
+
+    return sleepDuration;
+}
 
 // Formats the difference between two timestamps as an ellapsed time string
 String getTimeDeltaString(time_t t1, time_t t2)
@@ -816,7 +853,9 @@ void setup() {
                 }
                 else
                 {
-                    String time_str = getTimeDeltaString(now(), lastAccident.time);
+                    time_t currentTime = now();
+                    sleepDuration = calculateSleepDuration(currentTime, lastAccident.time);
+                    String time_str = getTimeDeltaString(currentTime, lastAccident.time);
                     printEllapsedTime(time_str);
                     printSubtitle(SUBTITLE_TEXT);
                 }
