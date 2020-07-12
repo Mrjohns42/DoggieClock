@@ -40,7 +40,7 @@ I used a [Momentary Right Angle Tactile Switch](https://www.amazon.com/uxcell-Mo
 
 ![button, button, who's got the button?](images/button.jpg)
 
-To keep a neat/tidy package, I used a right-angle mount tactile momentary button, on a [FeatherWing Proto Board](https://www.adafruit.com/product/2884).  Sure it's overkill, but the FeatherWing ecosystem made it too easy and it makes the final product looks nice.
+To keep a neat/tidy package, I used the right-angle mount tactile momentary button on a [FeatherWing Proto Board](https://www.adafruit.com/product/2884).  Sure it's overkill, but the FeatherWing ecosystem made it too easy and it makes the final product looks nice.
 
 ![overkill](images/buttonboard.jpg)
 
