@@ -74,27 +74,36 @@ This project is dependent on the following libraries.  To add them to your proje
 DoggieClock utilizes ESP32's WiFi to network with a time server to obtain timestamps.  You'll need to create a file called **secrets.h** that contains `#defines` for `WIFI_SSID` and `WIFI_PASSWORD`.  See **example-secrets.h** for details.
 
 #### User Preferences
-In **doggieclock.ino**, you'll find a few `#defines` for user-configurable items, e.g. `EPD_TRICOLOR/EPD_MONOCHROME`, `DEFAULT_SLEEP_SEC`, `RESET_BUTTON_HOLD_SEC`, `WIFI_TIMEOUT_SEC`, and `SUBTITLE_TEXT`.  Feel free to set these according to your preferences
+In **doggieclock.ino**, you'll find a few `#defines` for user-configurable items, e.g. `EPD_TRICOLOR/EPD_MONOCHROME`, `DEFAULT_SLEEP_SEC`, `RESET_BUTTON_HOLD_SEC`, `WIFI_TIMEOUT_SEC`, and `SUBTITLE_TEXT`.  Feel free to set these according to your preferences.
 
 #### Compile and Run
 That should be all there is to it.
 
 # If you enjoyed this project...
-Please donate to and buy from open source projects.  Open source doesn't just enable fun little stuff like this.  It underpins most of the technologies we take for granted in our day to day lives.  While these things may be free to us, the cost to build and operate them is certainly not zero.  The communities from all over the globe that collaborate and share and learn with/from each other in order to build these projects deserve our support.
+Please donate to and buy from open source projects.  Open source doesn't just enable the fun little stuff like this.  It underpins most of the technologies we take for granted in our day to day lives.  While these things may be free to us, the cost to build and operate them is certainly not zero.  The communities from all over the globe that collaborate and share and learn with/from each other in order to build these projects deserve our support.
 
 
-DONATE:
+#### BUY
+[Adafruit](https://www.adafruit.com/)
+
+[Sparkfun](https://www.sparkfun.com/)
+
+[Espressif](https://www.espressif.com/)
+
+
+#### DONATE
 [Arduino](https://www.arduino.cc/en/Main/Donate)
+
 [Mozilla Foundation](https://foundation.mozilla.org/en/)
+
 [Wikimedia Foundation](https://wikimediafoundation.org/support/)
+
 [Open Source Hardware Association](https://www.oshwa.org/)
+
 [Open Source Initiative](https://opensource.org/)
+
 [Software Freedom Conservancy](https://sfconservancy.org/)
 
-BUY:
-[Adafruit](https://www.adafruit.com/)
-[Sparkfun](https://www.sparkfun.com/)
-[Espressif](https://www.espressif.com/)
 
 
 
