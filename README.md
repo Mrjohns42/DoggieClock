@@ -31,7 +31,7 @@ Adafruit makes it too easy with added SRAM, a microSD socket, and integrated sup
 They also offer a traditional monochrome EINK version of this board, and this project code should support it as well.  Look for the `EPD_MONOCHROME` flag.
 
 ### [Lithium Ion Polymer Battery - 3.7v 1200mAh](https://www.adafruit.com/product/258)
-You can go with more or less mAh as your needs require.  If you don't get it from Adafruit, check the polarity of your connector to make sure it's the same as the board, or you'll let out the magic smoke.  You can also forego the LiPo altogher and run the board off USB power alone.
+You can go with more or less mAh as your needs require.  If you don't get it from Adafruit, check the polarity of your connector to make sure it's the same as the board, or you'll let out the magic smoke.  You can also forego the LiPo altogether and run the board off USB power alone.
 
 ### Reset Button
 You'll want to wire a button between GND and Pin 14 for the reset functionality.  The code is set up such that a short press will wake the device from sleep or restart the program if already awake, and a long press (configurable, default 10 seconds) will reset the counter.
